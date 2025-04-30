@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero = parseInt(prompt("Insira um número inteiro para calcular fatorial: "));
+let fatorial = 1;
+
+if (numero < 0) {
+    console.log("Fatorial não definido para números negativos.");
+} else {
+    for(let i = 1; i <= numero; i++) {
+        fatorial *= i;
+    }
+    console.log("O fatorial de " + numero + " é: " + fatorial);
+}
+    </script>
+</body>
+</html>

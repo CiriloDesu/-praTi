@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let quantidadeMaca = parseInt(prompt("Quantas maçãs você comprou? "));
+let precoPorMaca = 0.30; 
+let precoPorMacaComDesconto = 0.25; 
+let precoTotal = 0; 
+
+if (quantidadeMaca < 12) {
+    precoTotal = quantidadeMaca * precoPorMaca;
+}else {
+    precoTotal = quantidadeMaca * precoPorMacaComDesconto; 
+}
+
+console.log("O preço total é: R$ " + precoTotal.toFixed(2));
+    </script>
+</body>
+</html>
